@@ -3,6 +3,7 @@ package ink.ptms.chemdah.core.quest.objective.bukkit.paper
 import com.destroystokyo.paper.event.player.PlayerArmorChangeEvent
 import ink.ptms.chemdah.core.quest.objective.ObjectiveCountableI
 
+@Dependency("minecraft")
 object IPlayerArmorChange : ObjectiveCountableI<PlayerArmorChangeEvent>() {
     override val name: String = "armor change"
     override val event: Class<PlayerArmorChangeEvent> = PlayerArmorChangeEvent::class.java
